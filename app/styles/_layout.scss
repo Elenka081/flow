@@ -1,0 +1,16 @@
+$susy: (
+ columns: 12,
+ gutters: 1/4,
+ gutter-position: inside
+);
+
+@include layout($susy);
+
+body {
+	@include container(80%);
+}
+
+
+.work {
+	@include span(3);
+}
