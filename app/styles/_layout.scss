@@ -1,3 +1,4 @@
+@import "susy";
 $susy: (
  columns: 12,
  gutters: 1/4,
@@ -7,10 +8,18 @@ $susy: (
 @include layout($susy);
 
 body {
+	background:#eee
 	@include container(80%);
 }
-
 
 .work {
 	@include span(3);
 }
+
+.else{
+@include span(4 at 9);	
+}
+.title {
+	border-bottom: solid 5 px #faf;
+}
+ 
