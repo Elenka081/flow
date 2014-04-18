@@ -1,25 +1,20 @@
-@import "susy";
 $susy: (
- columns: 12,
- gutters: 1/4,
- gutter-position: inside
-);
+	columns: 12,
+	gutters: 1/4,
+	gutter-position: inside
+	);
 
 @include layout($susy);
 
 body {
-	background:#eee
-	@include container(80%);
+	background:#298545
+	@include container(800 px);
 }
 
 .work {
 	@include span(3);
 }
 
-.else{
-@include span(4 at 9);	
-}
 .title {
-	border-bottom: solid 5 px #faf;
+	border-bottom: solid 5 px #121261;
 }
- 
