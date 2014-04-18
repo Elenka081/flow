@@ -7,8 +7,8 @@ $susy: (
 @include layout($susy);
 
 body {
-	background:#298545
-	@include container(800 px);
+	background:#f3e7e7;
+	@include container(80%);
 }
 
 .work {
@@ -16,5 +16,5 @@ body {
 }
 
 .title {
-	border-bottom: solid 5 px #121261;
+	border-bottom:2px solid #121212;
 }
