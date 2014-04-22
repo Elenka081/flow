@@ -7,14 +7,23 @@ $susy: (
 @include layout($susy);
 
 body {
-	background:#f3e7e7;
+	background:#ebebeb;
 	@include container(80%);
 }
 
 .work {
 	@include span(3);
 }
+.header{
+	background:#ffddaa
 
+}
+
+.footer{
+	background:#505050;
+	@include span(8);
+	@include span(4 at 9);
+}
 .title {
 	border-bottom:2px solid #121212;
 }
