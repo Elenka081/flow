@@ -1,2 +1,116 @@
+body {
+  background:#ebebeb;
+  background-image: url("../images/banx.jpg");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+}
+// Header&title block --------
 
+.header{
+  color:#4f4d6a;
+  @include text-font(normal);
+}
 
+.title {
+  margin: 10px;
+  border-bottom: 2px solid #ffffff;
+  @include text-font(normal);
+  font-size:200%;
+  font-family:"Arial";
+}
+
+.title-line{
+  color:#ffffff;
+}
+
+hr{
+  color:#ffffff;
+  background-color: #fff;
+  border:none;
+  height: 2px;
+  width:100%;
+ 
+}
+
+.title-mark{
+  @include text-font(italic);
+   font-size:200%;
+
+}
+.title-mark>h2 {
+   @include text-font(italic);
+    font-size: 90%;
+  }
+
+h1{
+  @include text-font(normal);
+  font-weight:bold;
+  font-size: 520%;
+}
+
+h2{
+  @include text-font(normal);
+  font-weight:bold;
+  font-size: 120%;
+}
+
+.btn-violet{
+  @include button($violet2,$violet1,#4f4d6a);
+}
+
+.btn-red{
+ @include button($red2,$red1,#927c90);
+}
+
+.sm-btn{
+  @include sm-button;
+ }
+
+//Our worx block ------------
+.circle-div{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 25px solid #efefef;
+}
+
+.work {
+  color:#4f4d6a;
+}
+
+#work-container{
+  background:#ebebeb;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: italic;
+  font-family:"Times New Roman"; 
+}
+
+#work1{
+  background: url("../images/work_01.jpg") no-repeat;
+}
+#work2{
+  background: url("../images/work_02.jpg") no-repeat;
+}
+#work3{
+  background: url("../images/work_03.jpg") no-repeat;
+}
+#work4{
+  background: url("../images/work_04.jpg") no-repeat;
+}
+
+//  Awesome block ------------
+#awe-container{
+  background:#ffffff;
+  color:#4f4d6a;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-style: italic; 
+  font-family:"Times New Roman";
+}
+
+// Footer block -------------
+#footer-container{
+  background-color: #505050;
+  color:#ffffff;
+}
