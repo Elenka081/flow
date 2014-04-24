@@ -1,3 +1,10 @@
+@mixin text-font($style){
+	font-family:"Times New Roman",Georgia,Serif;
+	color:#4f4d6a;
+	font-style: $style;	
+	text-align:center;
+}
+
 $susy: (
 	columns: 12,
 	gutters: 1/4,
@@ -7,6 +14,7 @@ $susy: (
 	);
 
 @include layout($susy);
+
 
 body {
 	background:#ebebeb;
@@ -21,28 +29,50 @@ body {
 }
 
 // Header&title block --------
-.title {
-	border-bottom:2px solid #ffffff;
-}
-
 .header{
 	@include span(6);
-	background:#ffddaa;
+//	background:#ffddaa;
+color:#4f4d6a;
+}
+.title {
+	border-bottom: 2px solid #ffffff;
+	@include text-font(normal);
+	font-size:200%;
+	font-weight:bold;
+	font-family:"Arial";
 }
 
+.title-line{
+	@include span(5);
+	color:#ffffff;
+	vertical-align: middle;
+}
+
+.title-mark{
+	@include span(2);
+	@include text-font(italic);
+	margin-top:5px;
+	font-size:200%;
+}
+
+.title-line>hr{
+	color:#ffffff;
+	background-color: #fff;
+	border:none;
+	height: 2px;
+	width:95%
+}
 
 h1{
-	font-family:"Times New Roman",Georgia,Serif;
+	@include text-font(normal);
 	font-weight:bold;
-	font-size:40 em;
-	color:#4f4d6a;
-
+	font-size: 520%;
 }
 
 //Our worx block ------------
 .work {
 	@include span(3);
-	position:1063px;
+	color:#4f4d6a;
 }
 .circle-div{
 	border-radius: 50%;
@@ -74,6 +104,7 @@ h1{
 
 #awe-container{
 	background:#ffffff;
+	color:#4f4d6a;
 }
 // Footer block -------------
 .foot1{
@@ -86,6 +117,7 @@ h1{
 
 #footer-container{
 	background-color: #505050;
+	color:#ffffff;
 }
 
 
