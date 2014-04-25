@@ -1,8 +1,5 @@
 body {
   background:#ebebeb;
-  background-image: url("../images/banx.jpg");
-  background-repeat:no-repeat;
-  background-size:100% 100%;
 }
 // Header&title block --------
 
@@ -10,7 +7,17 @@ body {
   color:#4f4d6a;
   @include text-font(normal);
 }
-
+#header-links {
+  a {
+    text-decoration: none;
+  }
+}
+#main-wrapper {
+  background-image: url("../images/banx.jpg");
+  background-repeat:no-repeat;
+  height: 1135px;
+  background-size: cover;
+}
 .title {
   margin: 10px;
   border-bottom: 2px solid #ffffff;
@@ -53,7 +60,9 @@ h2{
   font-weight:bold;
   font-size: 120%;
 }
-
+#buttons-container {
+  text-align: center;
+}
 .btn-violet{
   @include button($violet2,$violet1,#4f4d6a);
 }
@@ -88,15 +97,19 @@ h2{
 
 #work1{
   background: url("../images/work_01.jpg") no-repeat;
+  background-position: top center;
 }
 #work2{
   background: url("../images/work_02.jpg") no-repeat;
+  background-position: top center;
 }
 #work3{
   background: url("../images/work_03.jpg") no-repeat;
+  background-position: top center;
 }
 #work4{
   background: url("../images/work_04.jpg") no-repeat;
+  background-position: top center;
 }
 
 //  Awesome block ------------

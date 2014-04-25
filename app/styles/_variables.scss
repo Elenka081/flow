@@ -3,15 +3,20 @@ $violet1:#484d6a;
 $violet2:#6e6c8a;
 $red1:#9c8394;
 $red2:#d0c2ca;
+
 @mixin button($color1, $color2, $border-color) {
+	display: inline-block;
+	margin: 0 10px;
 	width: 220px;
 	height: 44px;
 	background: linear-gradient($color1, $color2);
 	border:1px solid $border-color;
-	padding:10px 40px; 
 	border-radius:25px;
 	box-shadow: 1px 1px 1px #131313;
 	color:#ffffff;
+	text-align: center;
+	line-height: 44px;
+	font-style: italic;
 }
 
 @mixin text-font($style){
@@ -21,6 +26,7 @@ $red2:#d0c2ca;
 	text-align:center;
 	font-style: oblique;
 	font-weight:bold;
+
 }
 
 @mixin sm-button {

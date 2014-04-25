@@ -10,12 +10,11 @@ $susy: (
 
 .container {
 	@include container(80%);
+	height: 100%;
 }
 
 // Header&title block --------
-.header{
-	@include span(6);
-}
+
 
 .title-line{
 	@include span(5);
@@ -44,7 +43,7 @@ $susy: (
 	@include span(4);
 }
 
-//buttons
+//TO DO: remove this from grid
 .btn{
 	@include span(3);
 }
