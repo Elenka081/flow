@@ -20,13 +20,10 @@ $red2:#d0c2ca;
 }
 
 @mixin text-font($style){
-	font-family:"Times New Roman",Georgia,Serif;
+	font-family:"georgia";
 	color:#4f4d6a;
 	font-style: $style;	
 	text-align:center;
-	font-style: oblique;
-	font-weight:bold;
-
 }
 
 @mixin sm-button {
@@ -38,3 +35,4 @@ $red2:#d0c2ca;
 	font-style: oblique;
 	text-align:center;
 }
+

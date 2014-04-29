@@ -14,7 +14,10 @@ $susy: (
 }
 
 // Header&title block --------
+.header-col{
+	@include span(6);
 
+}
 
 .title-line{
 	@include span(5);

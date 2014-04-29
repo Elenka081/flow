@@ -1,33 +1,49 @@
 body {
   background:#ebebeb;
+  font-size: 16px;
+  font-family:"georgia";
 }
 // Header&title block --------
 
-.header{
-  color:#4f4d6a;
-  @include text-font(normal);
-}
+
+
+
 #header-links {
-  a {
-    text-decoration: none;
+  height: 190px;
+  padding-top:35px;
+  a#banx{
+    font-size: 1.99em;
+    font-family: "georgia";
   }
+  
+  a {
+    font-family: "PTSans";
+    text-decoration: none;
+    font-size: 0.75em;
+    color: #4f4d6a;
+    margin-left:30px;
+  }
+
 }
+
 #main-wrapper {
   background-image: url("../images/banx.jpg");
   background-repeat:no-repeat;
   height: 1135px;
   background-size: cover;
 }
+
 .title {
   margin: 10px;
   border-bottom: 2px solid #ffffff;
   @include text-font(normal);
-  font-size:200%;
-  font-family:"Arial";
+  font-size:1.125em;
+  font-family:"OpenSans-Bold";
 }
 
 .title-line{
-  color:#ffffff;
+  border-bottom:2px solid #ffffff;
+  height:20px;
 }
 
 hr{
@@ -36,29 +52,32 @@ hr{
   border:none;
   height: 2px;
   width:100%;
- 
+
 }
 
-.title-mark{
+#title-mark1{
   @include text-font(italic);
-   font-size:200%;
-
+ text-align:center;
+ font-size:1.5em;
 }
-.title-mark>h2 {
-   @include text-font(italic);
-    font-size: 90%;
-  }
+
+#title-mark2{
+ @include text-font(italic);
+ text-align:center;
+ font-size:1.12em;
+}
+
 
 h1{
   @include text-font(normal);
   font-weight:bold;
-  font-size: 520%;
+  font-size:7.81em;
 }
 
 h2{
   @include text-font(normal);
   font-weight:bold;
-  font-size: 120%;
+  // font-size: 120%;
 }
 #buttons-container {
   text-align: center;
@@ -73,7 +92,7 @@ h2{
 
 .sm-btn{
   @include sm-button;
- }
+}
 
 //Our worx block ------------
 .circle-div{
@@ -92,7 +111,7 @@ h2{
   padding-top: 40px;
   padding-bottom: 40px;
   font-style: italic;
-  font-family:"Times New Roman"; 
+  font-family:"georgia"; 
 }
 
 #work1{
@@ -119,11 +138,12 @@ h2{
   padding-top: 40px;
   padding-bottom: 40px;
   font-style: italic; 
-  font-family:"Times New Roman";
+  font-family:"georgia";
 }
 
 // Footer block -------------
 #footer-container{
   background-color: #505050;
   color:#ffffff;
+  font-family: "OpenSans-Regular";
 }
