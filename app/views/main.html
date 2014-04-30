@@ -2,6 +2,7 @@
       <!-- <link rel="stylesheet" href="styles/main.css"> -->
     </head>
     <body>
+      <a id="top"></a> 
       <div id="main-wrapper" class="section-wrapper">
         <section class="container" >
           <div id="header-links"> 
@@ -52,7 +53,7 @@
 
   <div id="work-container">
     <div class="container">
-      <div class="work"> 
+      <div class="work" ng-controller="ScrollCtrl"> 
         <div class="circle-div" id="work1"> </div>
         <p id="tit"> Desire </p>
         Duis bibendum gravida eros, bibendum1 problem
@@ -60,81 +61,93 @@
         Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
       </div>
 
-      <div class="work">  <div class="circle-div" id="work2"> </div>
-       <p id="tit"> Aspiration </p>
+      <div class="work" ng-controller="ScrollCtrl">  <div class="circle-div" id="work2"> </div>
+      <p id="tit"> Aspiration </p>
       Nam fringilla sodales nisl, ac gravida libero rutrum a. Aenean posuere felis vel nunc rhoncus, nec posuere dui sollicit1 problem     Warning: Task "jshint:all" failed. Use --force continue. Aborted warnings.udin. 
     </div>
 
-    <div class="work"> 
+    <div class="work" ng-controller="ScrollCtrl"> 
       <div class="circle-div" id="work3"> </div>
-       <p id="tit"> Design </p>
+      <p id="tit"> Design </p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.    P raesent ut risus velit. Phasellus euismod egestas justo eu viverra. 1 problem
     </div>
 
-    <div class="work"> 
+    <div class="work" ng-controller="ScrollCtrl"> 
       <div class="circle-div" id="work4"> </div>
-       <p id="tit"> Lust </p>
+      <p id="tit"> Lust </p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis e Duis bibendum gravida eros, bibendum1 problem
       Warning: Task "jshint:all" failed. Use --force to continue.
       Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
     </div>
-     <div class="title">   </div>
-    <div id="buttons-container">
-     <div class="btn-violet">
-       See our work
-     </div>
-     <div class="btn-red">
-       Meet our team     
-     </div>
+    
+
+
+  </div>
+  <div id="buttons-container">
+   <div class="btn-violet">
+     See our work
    </div>
+   <div class="btn-red">
+     Meet our team     
+   </div>
+   
+
+   <div class="top-scroll"  ng-controller="ScrollCtrl">  <a ng-click="gotoTop()"><img src="..\images\up-arrow.png" width="40" height="40"></a></div>
  </div>
+
 </div>
 
 <!-- Awesome -->
 <div id="awe-container">
   <div class="container">
-     <p id="tit"> What makes us so awesome</p>
-    <div class="awesome">11
-      Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
-      Warning: Task "jshint:all" failed. Use --force to continue.
-      Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
-      <div class="sm-btn">View more</div>
-    </div>
-    <div class="awesome">12
-      Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
-      Warning: Task "jshint:all" failed. Use --force to continue.
-      Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
-      <div class="sm-btn">View more</div>
-    </div>
-    <div class="awesome">13
-      Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
-      Warning: Task "jshint:all" failed. Use --force to continue.
-      Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus.
-      <div class="sm-btn">View more</div> 
-    </div>
+   <p id="tit"> What makes us so awesome</p>
+   <div class="awesome">11
+    Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
+    Warning: Task "jshint:all" failed. Use --force to continue.
+    Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
+    <div class="sm-btn">View more</div>
   </div>
+  <div class="awesome">12
+    Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
+    Warning: Task "jshint:all" failed. Use --force to continue.
+    Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
+    <div class="sm-btn">View more</div>
+  </div>
+  <div class="awesome">13
+    Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
+    Warning: Task "jshint:all" failed. Use --force to continue.
+    Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus.
+    <div class="sm-btn">View more</div> 
+  </div>
+<div class="top-scroll"  ng-controller="ScrollCtrl">  
+  <a ng-click="gotoTop()">
+  <img src="..\images\up-arrow_g.png" width="40" height="40"></a>
+  </div>
+</div>
+
+</div>
 </div>
 <div id="footer-container">
   <div class="container">
    <p id="tit"> What makes us so awesome</p>
-    <div class="foot1">footer left_
-      Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
-      Warning: Task "jshint:all" failed. Use --force to continue.
-      Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
+   <div class="foot1">footer left_
+    Phasellus condimentum ultrices nunc quis commodo. Etiam non velit vel urna viverra porta. Sed accumsan aliquam ullamcorper. Nunc et consectetur lectus.  Duis bibendum gravida eros, bibendum1 problem
+    Warning: Task "jshint:all" failed. Use --force to continue.
+    Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. 
 
-    </div>
-
-    <div class="foot2"> footer right_
-      Pr. Nunc et consectetur lectus. etur adipiscing elit.  Duis bibendum gravida eros, bibendum1 problem
-      Warning: Task "jshint:all" failed. Use --force to continue.
-      Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. Praesent ut risus velit. Phasellus euismod egestas justo 
-
-
-
-    </div>
-    <a href="../views/test_page_my.html"> Click... Here I am studying Susy etc.</a>
-    Copyright
   </div>
+
+  <div class="foot2"> footer right_
+    Pr. Nunc et consectetur lectus. etur adipiscing elit.  Duis bibendum gravida eros, bibendum1 problem
+    Warning: Task "jshint:all" failed. Use --force to continue.
+    Aborted due to warnings. accumsan tellus feugiat ut. Donec porta tellus lorem, sit amet elementum nisi blandit nec. Nulla placerat convallis tellus. Praesent ut risus velit. Phasellus euismod egestas justo 
+
+
+
+  </div>
+  <a href="../views/test_page_my.html"> Click... Here I am studying Susy etc.</a>
+  Copyright
+</div>
 </div>
 
 </body>
